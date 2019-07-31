@@ -4,6 +4,7 @@
 <head>
 
     <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -146,10 +147,10 @@
 {{--<script src="{{ asset('backend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>--}}
 
 <!-- Core plugin JavaScript-->
-<script src="{{ asset('backend/vendor/jquery-easing/jquery.easing.min.js') }}vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="{{ asset('backend/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
 <!-- Page level plugin JavaScript-->
-<script src="{{ asset('backend/vendor/chart.js/Chart.min.js') }}"></script>
+<script src="{{ asset('backend/vendor/chart/Chart.min.js') }}"></script>
 <script src="{{ asset('backend/vendor/datatables/jquery.dataTables.js') }}"></script>
 <script src="{{ asset('backend/vendor/datatables/dataTables.bootstrap4.js') }}"></script>
 
