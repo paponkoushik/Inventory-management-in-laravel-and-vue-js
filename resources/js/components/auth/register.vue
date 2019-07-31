@@ -4,19 +4,9 @@
         <div class="card-body">
             <form>
                 <div class="form-group">
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <div class="form-label-group">
-                                <input type="text" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
-                                <label for="firstName">First name</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-label-group">
-                                <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
-                                <label for="lastName">Last name</label>
-                            </div>
-                        </div>
+                    <div class="form-label-group">
+                        <input type="email" id="inputFullName" class="form-control" placeholder="Full Name" required="required">
+                        <label for="inputFullName">Full Name</label>
                     </div>
                 </div>
                 <div class="form-group">
@@ -41,11 +31,10 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="login.html">Register</a>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="login.html">Login Page</a>
-                <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                <router-link to="/" class="d-block small mt-3">Already have an account?</router-link>
             </div>
         </div>
     </div>
