@@ -23,10 +23,10 @@
                         </label>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="index.html">Login</a>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="register.html">Register an Account</a>
+                <router-link to="/register" class="d-block small mt-3">Register an Account</router-link>
                 <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
             </div>
         </div>
