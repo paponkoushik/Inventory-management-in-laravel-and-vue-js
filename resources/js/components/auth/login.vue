@@ -15,19 +15,11 @@
                         <label for="inputPassword">Password</label>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="remember-me">
-                            Remember Password
-                        </label>
-                    </div>
-                </div>
                 <button type="submit" class="btn btn-primary btn-block">Login</button>
             </form>
             <div class="text-center">
                 <router-link to="/register" class="d-block small mt-3">Register an Account</router-link>
-                <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                <router-link to="/forget" class="d-block small mt-3">Forgot Password?</router-link>
             </div>
         </div>
     </div>
