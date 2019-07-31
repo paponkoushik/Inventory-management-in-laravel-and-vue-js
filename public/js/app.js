@@ -37134,6 +37134,7 @@ var staticRenderFns = [
             staticClass: "form-control",
             attrs: {
               type: "email",
+              name: "email",
               id: "inputEmail",
               placeholder: "Email address",
               required: "required",
@@ -37215,6 +37216,7 @@ var staticRenderFns = [
             staticClass: "form-control",
             attrs: {
               type: "email",
+              name: "email",
               id: "inputEmail",
               placeholder: "Email address",
               required: "required",
@@ -37234,6 +37236,7 @@ var staticRenderFns = [
             staticClass: "form-control",
             attrs: {
               type: "password",
+              name: "password",
               id: "inputPassword",
               placeholder: "Password",
               required: "required"
@@ -37306,6 +37309,7 @@ var staticRenderFns = [
             staticClass: "form-control",
             attrs: {
               type: "email",
+              name: "name",
               id: "inputFullName",
               placeholder: "Full Name",
               required: "required"
@@ -37324,6 +37328,7 @@ var staticRenderFns = [
             staticClass: "form-control",
             attrs: {
               type: "email",
+              name: "email",
               id: "inputEmail",
               placeholder: "Email address",
               required: "required"
@@ -37344,6 +37349,7 @@ var staticRenderFns = [
                 staticClass: "form-control",
                 attrs: {
                   type: "password",
+                  name: "password",
                   id: "inputPassword",
                   placeholder: "Password",
                   required: "required"
