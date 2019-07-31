@@ -5,7 +5,7 @@
             <form>
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
+                        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
                         <label for="inputEmail">Existing Email address</label>
                     </div>
                 </div>
