@@ -25,7 +25,7 @@
     </div>
 </template>
 
-<script>
+<script type="text/javascript">
 
 </script>
 
