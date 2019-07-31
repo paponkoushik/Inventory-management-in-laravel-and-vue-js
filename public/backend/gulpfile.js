@@ -30,9 +30,9 @@ gulp.task('vendor', function() {
 
   // ChartJS
   gulp.src([
-      './node_modules/chart.js/dist/*.js'
+      './node_modules/chart/dist/*.js'
     ])
-    .pipe(gulp.dest('./vendor/chart.js'))
+    .pipe(gulp.dest('./vendor/chart'))
 
   // DataTables
   gulp.src([
