@@ -38,7 +38,7 @@
         methods:{
             login(){
                 axios.post('/api/auth/login',this.form)
-                    .then(respose => console.log(respose.data))
+                    .then(respose => User.responseAfterLogin(res))
                     .catch(error => console.log(error.response.data))
             }
         }
