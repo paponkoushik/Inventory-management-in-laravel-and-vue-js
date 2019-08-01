@@ -28,7 +28,7 @@
 
 <body id="page-top">
 <div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top" id="topbar" style="display: none;"  v-show="$route.path === '/' || $route.path === '/register' || $route.path ==='/forget' ? false : true ">
         <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
         <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
             <i class="fas fa-bars"></i>
@@ -82,10 +82,11 @@
                 </div>
             </li>
         </ul>
-
     </nav>
+
+    <!-- Sidebar -->
     <div id="wrapper">
-        <ul class="sidebar navbar-nav">
+        <ul class="sidebar navbar-nav" id="leftbar" v-show="$route.path === '/' || $route.path === '/register' || $route.path ==='/forget' ? false : true "  style="display: none;">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -132,7 +133,13 @@
 <!-- Bootstrap core JavaScript-->
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('backend/vendor/jquery/jquery.min.js') }}"></script>
-{{--<script src="{{ asset('backend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>--}}
+<script type="text/javascript">
+    let token = localStorage.getItem('token');
+    if (token) {
+        $("#topbar").css("display","");
+        $("#leftbar").css("display","");
+    }
+</script>
 <!-- Core plugin JavaScript-->
 <script src="{{ asset('backend/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
