@@ -4,7 +4,15 @@
 
 <script>
     export default {
-        name: "logout"
+        created(){
+            localStorage.removeItem('token')
+            localStorage.removeItem('user')
+            Toast.fire({
+                type: 'success',
+                title: 'Successfully Log Out!'
+            })
+            this.$router.push({ name: 'login' })
+        }
     }
 </script>
 
