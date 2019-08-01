@@ -27,6 +27,11 @@
 
 <script type="text/javascript">
     export default{
+        created(){
+            if (User.loggedIn()) {
+                this.$router.push({name : 'home'})
+            }
+        },
         data(){
             return{
                 form:{
@@ -38,7 +43,14 @@
         methods:{
             login(){
                 axios.post('/api/auth/login',this.form)
-                    .then(respose => User.responseAfterLogin(res))
+                    .then(res => {
+                        User.responseAfterLogin(res)
+                        Toast.fire({
+                            type: 'success',
+                            title: 'Signed in successfully'
+                        })
+                        this.$router.push({ name : 'home'})
+                    })
                     .catch(error => console.log(error.response.data))
             }
         }
