@@ -24,10 +24,10 @@ class User {
         return this.hasToken()
     }
 
-    logout(){
+    /*logout(){
         AppStorage.clear()
-        this.$router.push({ name: '/' })
-    }
+        this.$router.push({ name: 'login' })
+    }*/
 
     name(){
         if (this.loggedIn) {
