@@ -4,6 +4,9 @@ namespace App\Http\Controllers\api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Employee;
+use DB;
+use Image;
 
 class EmployeeController extends Controller
 {
@@ -14,7 +17,8 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        //
+        $employee=Employee::all();
+        return response()->json($employee);
     }
 
     /**
