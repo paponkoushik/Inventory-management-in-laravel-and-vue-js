@@ -12,7 +12,7 @@ import {routes} from './routes';
 import User from './helper/User';
 window.User = User;
 
-//import user class
+//import notification class
 import Notification from './helper/Notification';
 window.Notification = Notification;
 
