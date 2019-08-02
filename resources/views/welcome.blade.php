@@ -101,8 +101,8 @@
                     <span>Employee</span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <router-link class="dropdown-item" to="employee">Add New</router-link>
-                    <router-link class="dropdown-item" to="#">All Employee</router-link>
+                    <router-link class="dropdown-item" to="/store-employee">Add New</router-link>
+                    <router-link class="dropdown-item" to="/employee">All Employee</router-link>
 
                 </div>
             </li>
