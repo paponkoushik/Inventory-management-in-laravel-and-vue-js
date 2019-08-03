@@ -106,22 +106,6 @@
 
                 </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Supplier</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <router-link class="dropdown-item" to="#">All Supplier</router-link>
-                    <router-link class="dropdown-item" to="#">Add Supplier</router-link>
-
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
         </ul>
         <div id="content-wrapper">
             <div class="container-fluid">
