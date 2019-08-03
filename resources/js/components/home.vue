@@ -95,7 +95,7 @@
     export default {
         created(){
             if (!User.loggedIn()) {
-                this.$router.push({name : 'login'})
+                this.$router.push({name : '/'})
             }
         }
     }
