@@ -11,7 +11,7 @@
                 type: 'success',
                 title: 'Successfully Log Out!'
             })
-            this.$router.push({ name: 'login' })
+            this.$router.push({ name: '/' })
         }
     }
 </script>
