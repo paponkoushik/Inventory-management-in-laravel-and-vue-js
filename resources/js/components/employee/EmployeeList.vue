@@ -20,7 +20,6 @@
                         <label>Search</label>
                         <input type="text" v-model="searchTerm" class="form-control" style="width:200px; "><br>
                         <table class="table table-bordered" id="" width="100%" cellspacing="0">
-
                             <thead>
                             <tr>
                                 <th>Name</th>
@@ -31,9 +30,7 @@
                                 <th>Action</th>
                             </tr>
                             </thead>
-
                             <tbody>
-
                             <tr v-for="employee in filtersearch" :key="employee.id">
                                 <td>{{ employee.name }}</td>
                                 <td><img :src="employee.photo" id="em_photo"></td>
@@ -45,7 +42,6 @@
                                     <a @click="deleteEmployee(employee.id)" class="btn btn-sm btn-danger">Delete</a>
                                 </td>
                             </tr>
-
                             </tbody>
                         </table>
                     </div>
